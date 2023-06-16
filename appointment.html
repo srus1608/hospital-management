@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Appointment</h1>
+    </header>
+    <form action="/appointment" method="POST">
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name="patientName" required><br>
+        <label for="doctor">Doctor:</label>
+        <select id="doctor" name="doctor">
+            <option value="doctor1">Doctor 1</option>
+            <option value="doctor2">Doctor 2</option>
+            <!-- Add more doctor options -->
+        </select><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br>
+        <input type="submit" value="Book Appointment">
+    </form>
+    <footer>
+        <p>&copy; 2023 Hospital Management</p>
+    </footer>
+</body>
+</html>
